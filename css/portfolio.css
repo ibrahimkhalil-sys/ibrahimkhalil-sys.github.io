@@ -1,0 +1,225 @@
+/*****************  ベース  ここから  *****************/
+
+
+/*****************  header向けモジュール  ここから  *****************/
+
+
+/* アイキャッチエリア */
+
+.l-header.header .top-visual {
+    background: url("../img/common/portfolio-eyecatch.jpg") center right no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+}
+
+
+/*****************  main向けモジュール  ここから  *****************/
+
+
+/* アンカーリンクエリア */
+
+.main .container-primary.intro .page-menu {
+    margin: 120px auto 20px;
+    max-width: 1600px;
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+}
+
+.main .intro ul li a {
+    position: relative;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #bbb;
+}
+
+.portfolio-button {
+    margin-left: 18%;
+    width: 40rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight: 50rem;
+    text-transform: uppercase;
+    padding: 1.25em 1em;
+    border: 2px solid;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+.catch-copyabout{
+    color: rgb(236, 12, 12);
+}
+
+/* portfolio-myprojectエリア */
+
+.container-primary.my-projects .contents {
+    display: inline-flex;
+    width: 90%;
+}
+
+.container-primary.my-projects .portfolio-title {
+    font-style: italic;
+    margin-top: 5%;
+    margin-left: 40%;
+    color: rgb(38, 3, 67);
+}
+
+.container-primary.my-projects .my-projects-left-content {
+    margin-left: 18%;
+    width: 50%;
+}
+
+.container-primary.my-projects .my-projects-right-content {
+    margin-left: 30%;
+    width: 50%;
+}
+
+.portfolio-link {
+    font-size: 3rem;
+    margin-left: 63%;
+    margin-top: -1.5%;
+}
+
+
+/*****************************************************************
+                        タブレット版のための追加設定
+*****************************************************************/
+
+@media screen and (max-width: 1200px) {
+     :root {
+        --header-height: 0;
+    }
+    body {
+        font-size: 1rem;
+    }
+    .l-header.header .top-visual {
+        background: url("../img/common/portfolio-eyecatch.jpg") center right no-repeat;
+        background-size: cover;
+        height: 20rem;
+        width: 100%;
+    }
+    .my-projects-left-content {
+        width: 40%;
+    }
+    .my-projects-right-content {
+        width: 60%;
+        margin-right: 10%;
+    }
+    .l-header.header .top-visual .heading-fill {
+        width: 90%;
+        min-width: auto;
+        padding: 2rem 1rem;
+        margin: 50% auto 0 auto;
+    }
+    .l-header.header .top-visual {
+        margin-top: 0px;
+        height: 60.2vw;
+        ;
+        font-size: 5vw;
+    }
+    /* ページ内遷移ずれ防止、前のコンテンツの末尾にdivとして埋め込む */
+    /* エンジニアのお仕事 */
+    .l-main .container-business-primary.my-projects {
+        background-size: 80%;
+    }
+    .portfolio-button {
+        display: inline;
+        margin-top: 4rem;
+        margin: 10%;
+    }
+}
+
+
+/*****************************************************************
+                          SP版のための追加設定
+*****************************************************************/
+
+
+/* スマホ縦画面の幅で判定 幅576px以下の場合に適用 */
+
+@media screen and (max-width: 576px) {
+    .l-header.header {
+        background: url("../img/common/portfolio-eyecatch.jpg") center center no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 25rem;
+    }
+    .l-header.header .top-visual .catch {
+        color: #fff;
+        font-size: 0rem;
+        padding-bottom: 100px;
+    }
+    .main .container-primary-inner {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .l-header.header .top-visual {
+        background: none;
+        width: 100%;
+        height: 40rem;
+    }
+    .main .container-primary {
+        width: 75%;
+        background: #fff;
+    }
+    body {
+        font-size: 0.7rem;
+    }
+    .my-projects-left-content {
+        margin-left: -10%;
+        width: 40%;
+    }
+    .my-projects-right-content {
+        width: 60%;
+    }
+    .main .container-primary h2 {
+        padding-left: 0%;
+    }
+    .main .container-primary .contents {
+        width: 100%;
+    }
+    .slick-prev,
+    .slick-next {
+        width: 30px !important;
+        height: 30px !important;
+        padding-top: 10px !important;
+    }
+    .slick-prev {
+        left: -30px !important;
+    }
+    .slick-next {
+        right: -30px !important;
+    }
+    .l-header.header .top-visual .heading-fill {
+        width: 90%;
+        min-width: auto;
+        padding: 2rem 1rem;
+        margin: 50% auto 0 auto;
+    }
+    .portfolio-button {
+        width: 10rem !important;
+        margin-left: 1rem !important;
+    }
+    .l-main .container-business-primary.my-projects {
+        background-size: 80%;
+    }
+    .portfolio-button {
+        margin-left: 18%;
+        width: 40rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-weight: 50rem;
+        text-transform: uppercase;
+        padding: 1.25em 1em;
+        border: 2px solid;
+        border-radius: 0.75em;
+        transform-style: preserve-3d;
+        transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+}

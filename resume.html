@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+
+
+    <title>osmanov's</title>
+    <meta charset="utf-8">
+    <!-- スマホ対応-phone settings -->
+
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="author" content="ibrahimkhalil osmanov">
+    <meta name="copyright" content="ibrahimkhalil osmanov">
+    <meta name="description" content="osmanov's portfolio">
+    <meta name="keywords" content="ibrahimkhalil,osmanov,software,developer,ITエンジニア,システム開発者,C# developer,プログラマー,computer science">
+    <!-- resetCSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="l-header header">
+        <div class="content-flex-space-between fixed-menu">
+            <a href="/index" class="header-logo">
+                <img class="header-image" src="img/common/ibo-logo.png" alt="ibo logo">
+                <h1 class="header-copy">Ibrahimkhalil <br> Osmanov</h1>
+                <h1 class="text-logo"> <br> <br> c# developer</h1>
+            </a>
+            <nav class="pc-display">
+                <ul class="header-menu">
+                    <li><a href="portfolio.html"><span class="menu-text">PORTFOLIO</span></a></li>
+                    <li><a href="about"><span class="menu-text">ABOUT</span></a></li>
+                    <li class="entry-select"><button class="contact-button" onClick="document.getElementById('contact').scrollIntoView();">CONTACT</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mini-menu">
+            <a href="/index" class="mini-logo">
+                <img class="header-image" src="img/common//ibo-logo.png" alt="ibo logo">
+                <div class="mini-copy">Ibrahimkhalil Osmanov<br>C# developer</div>
+            </a>
+            <div class="drawer-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="drawer-menu">
+                <ul class="menu-list">
+                    <li><a href="/index"><span class="menu-text">TOP</span></a></li>
+                    <li><a href="portfolio.html"><span class="menu-text">PORTFOLIO</span></a></li>
+                    <li><a href="about"><span class="menu-text">ABOUT</span></a></li>
+                    <li class="entry-select"><button class="contact-button" onClick="document.getElementById('contact').scrollIntoView();">CONTACT</button>
+                    </li>
+                </ul>
+                <div class="filter" id="filter"></div>
+            </div>
+        </div>
+        <div class="top-visual">
+            <div class="catch-copyabout">
+                Thank you for visiting&nbsp;this page.&nbsp;Please&nbsp;scroll down&nbsp;to see resume. <br>To check out projects or source, please visit PORTFOLIO page.<br>このページにアクセスしていただきありがとうございます。 <br class="sp-display">履歴書を見るために、下にスクロールしてください。<br>また、プロジェクトやソースをチェックしたい場合は「PORTFOLIO」画面へ移動ください。
+
+            </div>
+            <a href="#about-area" class="vertical">scroll</a>
+        </div>
+    </header>
+    <main class="l-main main">
+        <section class="container-primary resume">
+            <div class="about-text">
+
+                <button class="resume-button" onClick="document.getElementById('resume-jap').scrollIntoView();"> 履歴書を見る</button>
+
+                <button class="resume-button" onClick="document.getElementById('resume-eng').scrollIntoView();">経歴書を見る</button>
+
+            </div>
+        </section>
+        <div id="my-projects" style="margin-bottom: 10%;"></div>
+
+        <section class="container-primary my-projects">
+            <div class="portfolio-title">
+            </div>
+            <div class="contents">
+                <div id="resume-jap" class="my-projects-left-content">
+
+                    <p style="margin-bottom: 10%;">
+                        <h2> 履歴書</h2>
+                    </p>
+                    <embed class="pdf-container" src="img/common/Ibrahimkhalil_Osmanov_rirekisho.pdf" />
+
+                </div>
+                <div id="resume-eng" class="my-projects-right-content">
+                    <p style="margin-bottom: 10%;">
+                        <h2> 経歴書 </h2>
+                    </p>
+                    <embed class="pdf-container" src="img/common/ibrahimkhalil_osmanov_shokumukeirekisho.pdf" />
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="container-primary contact">
+            <h2>contact/follow</h2>
+            <div class="contents">
+                e-mail: xalil.osman62@gmail.com <br> tel: +818039133527
+            </div>
+            <ul>
+                <li class="github">
+                    <a href="https://github.com/ibrahimkhalil-sys">
+                        <img class="icon" src="img/common/git-logo.png" alt="github icon">
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/ibrahimkhalil-osmanov-112a4820a/">
+                        <img class="icon" src="img/common/in-logo.png" alt="linkedin icon">
+                    </a>
+                </li>
+                <li class="facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100004320728810">
+                        <img class="icon" src="img/common/fb-logo.png" alt="fb icon">
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a href="https://www.instagram.com/osmanov_ibrahimxalil/">
+                        <img class="icon" src="img/common/insta-logo.png" alt="instagram logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="l-footer footer">
+        <a href="#" id="tpBtn" class="go-top">
+            <span class="go-text">TOP</span>
+            <span class="triangle"></span>
+        </a>
+
+        <hr>
+        <div class="flex-order">
+            <nav class="footer-menu">
+                <ul class="content-flex-space-between">
+                    <div class="left-items">
+                        <li><a href="/index">TOP</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="about">ABOUT</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <img src="img/common/dev_logo.png" alt="ibo logo">
+        </div>
+        <small>&copy;<script>document.write("-"+new Date().getFullYear());</script>　osmanov's</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>
